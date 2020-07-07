@@ -40,5 +40,5 @@ jobs:
     - name: Archive artifacts
       uses: actions/upload-artifact@v1
       with:
-        name: dist
+        name: scdata-pkg
         path: dist
