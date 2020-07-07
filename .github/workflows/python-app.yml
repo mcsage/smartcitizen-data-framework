@@ -37,8 +37,8 @@ jobs:
     - name: Build package
       run: |
         python setup.py sdist bdist_wheel
-    - name: Upload artifacts
-        uses: actions/upload-artifact@v1
-        with:
-          name: scdata python package
-          path: dist/
+    - name: Archive artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: dist
+        path: dist
